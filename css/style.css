@@ -1,0 +1,96 @@
+body, html {
+    height: 100%;
+  }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(102, 102, 102);
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color:rgb(160, 160, 160);
+  -webkit-box-shadow: inset 0 0 6px rgba(90,90,90,0.7);
+}
+/** Section size
+*/
+.heads{
+  font-family: 'Bitter', serif;
+  height: 80%;
+  margin-top: 70px;
+}
+.exp{
+  height: 100%;
+}
+.projects{
+  height: 100%;
+}
+/** Header first text
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@font-face {
+  font-family: 'Thunderstorm';
+  src: url('../plugin/font/thunderstorm/Thunderstorm.otf') format("opentype");
+}
+.tx1{
+  font-size: 52pt;
+}
+.tx2{
+  font-size: 32pt;
+}
+.wave{
+  color: rgb(187, 127, 243);
+  text-shadow: 0 0 2px rgb(219, 219, 219);
+}
+.thunder{
+  font-family: 'Thunderstorm';
+  color: rgb(175, 107, 238);
+  text-shadow: 0 0 2px rgb(219, 219, 219);
+}
+/** Parralax
+*/
+.prx {
+ background-image: url('../image/3d-tech.jpg');
+ /* Full height */
+ height: 100%;
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.prx2 {
+ background-image: url('../image/3d-tech.jpg');
+ /* Full height */
+ height: 100%;
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .prx {
+      background-attachment: scroll;
+    }
+    .exp{
+      height: 75%;
+    }
+  }
+@media only screen and (max-device-width: 512px) {
+  .prx {
+    background-attachment: scroll;
+  }
+  .exp{
+    height: 75%;
+  }
+  .heads{
+    font-family: 'Bitter', serif;
+    height: 80%;
+    margin-top: 135px;
+  }
+}
