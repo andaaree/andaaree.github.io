@@ -23,7 +23,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: 70px;
 }
 .exp{
-  height: 100%;
+  height: auto;
 }
 .projects{
   height: 100%;
@@ -72,13 +72,26 @@ body::-webkit-scrollbar-thumb {
  background-repeat: no-repeat;
  background-size: cover;
 }
+/* .section1 {
+  height: 120vh;
+}
+.section2 {
+  height: 100vh;
+}
+.section3 {
+  height: 90vh;
+} */
+
+.bg-txt{
+  backdrop-filter: blur(10px);
+}
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
     .prx {
       background-attachment: scroll;
     }
     .exp{
-      height: 75%;
+      height: auto;
     }
   }
 @media only screen and (max-device-width: 512px) {
@@ -86,7 +99,7 @@ body::-webkit-scrollbar-thumb {
     background-attachment: scroll;
   }
   .exp{
-    height: 75%;
+    height: auto;
   }
   .heads{
     font-family: 'Bitter', serif;

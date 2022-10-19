@@ -30,22 +30,56 @@ const scroll = new Scroller({
     btnUpSelector:".button-up",
 });
 
-$('#boxCodeCustomer').change(function (e) { 
-    e.preventDefault();
-    var id = $(this).val();
-    $.ajax({
-        type: "post",
-        url: "localhost/"+id,
-        success: function (data) {
-            console.log(data);
-            $('#namaCust').text(data.nama);
-            $('#alamat').text(data.almt);
-        },error:function (data) { 
-            Swal.fire({
-                icon: 'error',
-                title: 'HALAH '+data.status,
-                text: data.message
-            });
-        }
-    });
+// $('#boxCodeCustomer').change(function (e) { 
+//     e.preventDefault();
+//     var id = $(this).val();
+//     $.ajax({
+//         type: "post",
+//         url: "localhost/"+id,
+//         success: function (data) {
+//             console.log(data);
+//             $('#namaCust').text(data.nama);
+//             $('#alamat').text(data.almt);
+//         },error:function (data) { 
+//             Swal.fire({
+//                 icon: 'error',
+//                 title: 'HALAH '+data.status,
+//                 text: data.message
+//             });
+//         }
+//     });
+// });
+
+// Expanding flexcard
+$(".option").click(function(){
+    $(".option").removeClass("active");
+    $(this).addClass("active");
+    
+ });
+$(document).ready(function () {
+    $("#owl1, #owl2").each(function () { 
+        $(this).owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        });
+        // Custom Navigation Events
+        $(".owl-next").click(function(){$(this).closest('.col-6').find('.owl-carousel').trigger('owl.next');});
+        $(".owl-prev").click(function(){$(this).closest('.col-6').find('.owl-carousel').trigger('owl.prev');});
+     });
 });
