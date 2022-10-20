@@ -81,7 +81,9 @@ body::-webkit-scrollbar-thumb {
 .section3 {
   height: 90vh;
 } */
-
+.btn-topped{
+  z-index: 99;
+}
 .bg-txt{
   backdrop-filter: blur(10px);
 }

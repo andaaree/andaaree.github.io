@@ -57,7 +57,7 @@ $(".option").click(function(){
     
  });
 $(document).ready(function () {
-    $("#owl1, #owl2").each(function () { 
+    $("#owl1, #owl2, #owl3").each(function () { 
         $(this).owlCarousel({
             loop:true,
             margin:10,
@@ -79,7 +79,7 @@ $(document).ready(function () {
             }
         });
         // Custom Navigation Events
-        $(".owl-next").click(function(){$(this).closest('.col-6').find('.owl-carousel').trigger('owl.next');});
-        $(".owl-prev").click(function(){$(this).closest('.col-6').find('.owl-carousel').trigger('owl.prev');});
+        $(".owl-next").click(function(){$(this).closest('.col-lg').find('.owl-carousel').trigger('owl.next');});
+        $(".owl-prev").click(function(){$(this).closest('.col-lg').find('.owl-carousel').trigger('owl.prev');});
      });
 });
