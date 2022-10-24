@@ -25,7 +25,13 @@
     } else {
       document.body.classList.add("text-light");
     }
-    
+
+    document.querySelectorAll(".btn-light").forEach((element) => {
+      element.className = element.className.replace(/-light/g, "-dark");
+    });
+
+    document.body.classList.add("btn-dark");
+
     // set light switch input to true
     if (! lightSwitch.checked) {
       lightSwitch.checked = true;
@@ -50,6 +56,12 @@
       document.body.classList.add("text-dark");
     }
     
+    document.querySelectorAll(".btn-dark").forEach((element) => {
+      element.className = element.className.replace(/-dark/g, "-light");
+    });
+
+    document.body.classList.add("btn-light");
+
     if (lightSwitch.checked) {
       lightSwitch.checked = false;
     }
