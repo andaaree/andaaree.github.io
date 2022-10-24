@@ -61,7 +61,7 @@ $(document).ready(function () {
         $(this).owlCarousel({
             loop:true,
             margin:10,
-            responsiveClass:true,
+            // responsiveClass:true,
             responsive:{
                 0:{
                     items:1,
@@ -82,4 +82,10 @@ $(document).ready(function () {
         $(".owl-next").click(function(){$(this).closest('.col-lg').find('.owl-carousel').trigger('owl.next');});
         $(".owl-prev").click(function(){$(this).closest('.col-lg').find('.owl-carousel').trigger('owl.prev');});
      });
+    // Popup Modal
+    // $("img").on('click',function (e) { 
+    //     e.preventDefault();
+    //     $("#mImg").attr("src", $(this).attr("src"));
+    //     $("#myModal").modal('show');
+    // });
 });

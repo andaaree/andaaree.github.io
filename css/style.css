@@ -84,6 +84,9 @@ body::-webkit-scrollbar-thumb {
 .btn-topped{
   z-index: 99;
 }
+.btn-big{
+  font-size: 32px;
+}
 .bg-txt{
   backdrop-filter: blur(10px);
 }
@@ -94,6 +97,12 @@ body::-webkit-scrollbar-thumb {
     }
     .exp{
       height: auto;
+    }
+    .heads{
+      margin-top: auto;
+    }
+    .btn-big{
+      font-size: 24px;
     }
   }
 @media only screen and (max-device-width: 512px) {
@@ -106,6 +115,9 @@ body::-webkit-scrollbar-thumb {
   .heads{
     font-family: 'Bitter', serif;
     height: 80%;
-    margin-top: 135px;
+    margin-top: 95px;
+  }
+  .btn-big{
+    font-size: 18px;
   }
 }
