@@ -72,6 +72,9 @@ body::-webkit-scrollbar-thumb {
  background-repeat: no-repeat;
  background-size: cover;
 }
+.contact{
+  margin-bottom: auto;
+}
 /* .section1 {
   height: 120vh;
 }
@@ -85,7 +88,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 99;
 }
 .btn-big{
-  font-size: 32px;
+  font-size: 24px;
 }
 .bg-txt{
   backdrop-filter: blur(10px);
@@ -102,9 +105,17 @@ body::-webkit-scrollbar-thumb {
       margin-top: auto;
     }
     .btn-big{
-      font-size: 24px;
+      font-size: 18px;
     }
   }
+@media only screen and (max-device-width: 900px){
+  .heads{
+    margin-top: 80px;
+  }
+  .btn-big{
+    font-size: 18px;
+  }
+}
 @media only screen and (max-device-width: 512px) {
   .prx {
     background-attachment: scroll;
@@ -118,6 +129,6 @@ body::-webkit-scrollbar-thumb {
     margin-top: 95px;
   }
   .btn-big{
-    font-size: 18px;
+    font-size: 12px;
   }
 }
