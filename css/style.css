@@ -115,7 +115,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btgr{
-  border-radius: 15px 15px 0 0;
+  border-radius: 25px 25px 0 0;
 }
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
@@ -132,6 +132,9 @@ body::-webkit-scrollbar-thumb {
     .btn-big{
       font-size: 18px;
     }
+    .btgr{
+      border-radius: 25px 25px 0 0;
+    }
   }
 @media only screen and (max-device-width: 900px){
   .heads{
@@ -139,6 +142,9 @@ body::-webkit-scrollbar-thumb {
   }
   .btn-big{
     font-size: 18px;
+  }
+  .btgr{
+    border-radius: 25px 25px 0 0;
   }
 }
 @media only screen and (max-device-width: 512px) {
@@ -155,5 +161,8 @@ body::-webkit-scrollbar-thumb {
   }
   .btn-big{
     font-size: 12px;
+  }
+  .btgr{
+    border-radius: 25px 25px 0 0;
   }
 }
