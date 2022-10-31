@@ -81,11 +81,33 @@ $(document).ready(function () {
         // Custom Navigation Events
         $(".owl-next").click(function(){$(this).closest('.col-lg').find('.owl-carousel').trigger('owl.next');});
         $(".owl-prev").click(function(){$(this).closest('.col-lg').find('.owl-carousel').trigger('owl.prev');});
-     });
+    });
     // Popup Modal
     // $("img").on('click',function (e) { 
     //     e.preventDefault();
     //     $("#mImg").attr("src", $(this).attr("src"));
     //     $("#myModal").modal('show');
     // });
+
+    // Select2 Theme enabler
+    $('.select2bs4').select2({
+        theme: 'bootstrap4'
+    })
+    // Font selector
+    $('#selector').change(function(){
+        var ft = '';
+        if ($(this).val() == "thunder") {
+            ft = 'Thunderstorm, sans-serif';
+        };
+        if ($(this).val() == "bitter") {
+            ft = '"Bitter", normal';
+        };
+        if ($(this).val() == "arial") {
+            ft = '"Arial", Helvetica, sans-serif';
+        };
+        if ($(this).val() == "times") {
+            ft = '"Times New Roman", Times, serif';
+        };
+        $('#df').css('font-family', ft);
+      });
 });
