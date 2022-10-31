@@ -20,7 +20,7 @@ body::-webkit-scrollbar-thumb {
 */
 .heads{
   height: 80%;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 .exp{
   height: auto;
@@ -70,6 +70,40 @@ body::-webkit-scrollbar-thumb {
 .space{
   margin-bottom: 125vh;
 }
+
+/**
+** ---------
+** Preloader
+** ---------
+**/
+.preload{
+  z-index: 99999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  overflow: hidden;
+  text-align: center;
+  background-color: salmon;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn-preload{
+  margin-bottom: 100px;
+}
+.ok{
+  animation-name: slideUp;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  transition-duration: 0.5s;
+}
+
 /** Parralax
 */
 .prx {
@@ -138,7 +172,7 @@ body::-webkit-scrollbar-thumb {
   }
 @media only screen and (max-device-width: 900px){
   .heads{
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
   .btn-big{
     font-size: 18px;
@@ -157,12 +191,27 @@ body::-webkit-scrollbar-thumb {
   .heads{
     font-family: 'Bitter', serif;
     height: 80%;
-    margin-top: 95px;
+    /* margin-top: 95px; */
   }
   .btn-big{
     font-size: 12px;
   }
   .btgr{
     border-radius: 25px 25px 0 0;
+  }
+}
+
+@keyframes slideUp {
+  0%,
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+   
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  
   }
 }

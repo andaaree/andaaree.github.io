@@ -30,14 +30,25 @@
 </head>
 
 <body>
+  <div class="preload">
+    <button class="btn btn-dark btn-sm btn-preload fixed-bottom">
+      <i class="fa fa-check"></i> Lhayo
+    </button>
+  </div>
   <main class="flex-shrink-0">
-    <div class="top">
-      <audio controls="true" autoplay="true" class="btn-player" src="audio/song.mp4">
-      </audio>
-      <div class="sw mx-3 mt-2 form-check form-switch">
-        <label class="form-label form-check-label mx-3" for="lightSwitch" id="lightSwitchLabel">
-          <i class="fa"></i></label>
-        <input class="form-control form-check-input" role="switch" type="checkbox" id="lightSwitch" />
+    <div class="top sticky-top row mt-2">
+      <div class="col-6 text-center">
+        <audio id="player" autoplay allow="autoplay">
+          <source src="audio/song.mp3" type="audio/mpeg">
+        </audio>
+        <button class="btn btn-dark btn-outline-info btn-player"><i class="fa fa-play"></i></button>
+      </div>
+      <div class="col-6">
+        <div class="sw mx-3 form-check form-switch">
+          <label class="form-label form-check-label mx-3" for="lightSwitch" id="lightSwitchLabel">
+            <i class="fa"></i></label>
+          <input class="form-control form-check-input" role="switch" type="checkbox" id="lightSwitch" />
+        </div>
       </div>
     </div>
     <!-- <nav class="main-header navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-1 fixed-top">
@@ -240,14 +251,15 @@
               <h3 class="wave mb-3">Address</h3>
               <p class="text-light"><i class="fa fa-map-marker"></i> : Semarang, Central Java, Indonesia</p>
               <h3 class="wave mb-3">Social Media</h3>
-              <p class="text-light"><i class="fa fa-instagram" aria-hidden="true"></i> : <a class="wave text-decoration-none" href="https://instagram.com/andaaree">@andaaree</a></p>
-              <p class="text-light"><i class="fa fa-twitter"></i> : <a class="wave text-decoration-none" href="https://twitter.com/andaaree"> @andaaree</a></p>
+              <p class="text-light"><i class="fa fa-envelope-o" aria-hidden="true"></i> : <a class="wave text-decoration-none" target="_blank" href="mailto:andaaree@gmail.com?subject=Hi andar! I have a project!">andaaree@gmail.com</a></p>
+              <p class="text-light"><i class="fa fa-instagram" aria-hidden="true"></i> : <a class="wave text-decoration-none" target="_blank" href="https://instagram.com/andaaree">@andaaree</a></p>
+              <p class="text-light"><i class="fa fa-twitter"></i> : <a class="wave text-decoration-none" target="_blank" href="https://twitter.com/andaaree"> @andaaree</a></p>
             </div>
-
           </div>
         </div>
       </div>
     </section>
+    <!-- Image Span -->
     <section>
       <div class="container-fluid">
         <img class="img-fluid" width="70px" src="image/hd_tp.png" alt="">
@@ -290,24 +302,24 @@
       </div>
     </div>
   </footer>
+  
+  <!-- BootStrap 5.1.3 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <!-- AOS Effects -->
+  <script src="plugin/aos/aos.js"></script>
+  <!-- Light / Dark Switch -->
+  <script src="js/switch.js"></script>
+  <!-- SmoothScroll 1.4 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+    integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Scroll To Top -->
+  <script src="plugin/scrollerjs/scroller-cdn.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="plugin/owlcarousel/js/owl.carousel.min.js"></script>
+  <!-- Select2 -->
+  <script src="plugin/select2/js/select2.full.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/cfg.js"></script>
 </body>
-<!-- BootStrap 5.1.3 -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-<!-- AOS Effects -->
-<script src="plugin/aos/aos.js"></script>
-<!-- Light / Dark Switch -->
-<script src="js/switch.js"></script>
-<!-- SmoothScroll 1.4 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
-  integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- Scroll To Top -->
-<script src="plugin/scrollerjs/scroller-cdn.min.js"></script>
-<!-- Owl Carousel -->
-<script src="plugin/owlcarousel/js/owl.carousel.min.js"></script>
-<!-- Select2 -->
-<script src="plugin/select2/js/select2.full.min.js"></script>
-<!-- Custom Script -->
-<script src="js/cfg.js"></script>
-
 </html>
