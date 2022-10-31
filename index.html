@@ -31,8 +31,15 @@
 
 <body>
   <main class="flex-shrink-0">
-    <audio class="btn-player" src="audio/song.mp4">
-    </audio>
+    <div class="top">
+      <audio controls="true" autoplay="true" class="btn-player" src="audio/song.mp4">
+      </audio>
+      <div class="sw mx-3 mt-2 form-check form-switch">
+        <label class="form-label form-check-label mx-3" for="lightSwitch" id="lightSwitchLabel">
+          <i class="fa"></i></label>
+        <input class="form-control form-check-input" role="switch" type="checkbox" id="lightSwitch" />
+      </div>
+    </div>
     <!-- <nav class="main-header navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-1 fixed-top">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -99,7 +106,7 @@
             <h2 class="wave mt-5 text-center">About Me</h2>
           </div>
           <div class="col-6">
-            <div class="col-3">
+            <div class="col-6">
               <div class="form-group">
                 <div class="input-group">
                   <select name="selector" id="selector" class="form-control select2 select2bs4">
@@ -222,7 +229,7 @@
         </div>
       </div>
     </section>
-    <section class="contact mt-3" id="contact">
+    <section class="contact mt-3 mb-5" id="contact">
       <div class="prx2">
         <div class="container-fluid">
           <div class="row justify-content-center bg-txt">
@@ -233,12 +240,17 @@
               <h3 class="wave mb-3">Address</h3>
               <p class="text-light"><i class="fa fa-map-marker"></i> : Semarang, Central Java, Indonesia</p>
               <h3 class="wave mb-3">Social Media</h3>
-              <p class="text-light"><i class="fa fa-instagram" aria-hidden="true"></i> : <a href="https://instagram.com/andaaree">@andaaree</a></p>
-              <p class="text-light"><i class="fa fa-twitter"></i> : <a href="https://twitter.com/andaaree"> @andaaree</a></p>
+              <p class="text-light"><i class="fa fa-instagram" aria-hidden="true"></i> : <a class="wave text-decoration-none" href="https://instagram.com/andaaree">@andaaree</a></p>
+              <p class="text-light"><i class="fa fa-twitter"></i> : <a class="wave text-decoration-none" href="https://twitter.com/andaaree"> @andaaree</a></p>
             </div>
 
           </div>
         </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <img class="img-fluid" width="50px" src="image/hd_tp.png" alt="">
       </div>
     </section>
   </main>

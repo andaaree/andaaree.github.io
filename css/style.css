@@ -67,6 +67,9 @@ body::-webkit-scrollbar-thumb {
   color: rgb(175, 107, 238);
   text-shadow: 0 0 2px rgb(219, 219, 219);
 }
+.space{
+  margin-bottom: 125vh;
+}
 /** Parralax
 */
 .prx {
