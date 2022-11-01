@@ -131,13 +131,14 @@ window.onload = function() {
     });
     $(".btn-preload").click(function (e) { 
         e.preventDefault();
-        $(".preload").addClass("ok");
         setTimeout(() => {
             $(".preload").remove();
-        }, 3000);
-        vid.play();
-        $(".btn-player i").addClass("fa-pause");
-        $(".btn-player i").removeClass("fa-play");
+            vid.play();
+            $(".btn-player i").addClass("fa-pause");
+            $(".btn-player i").removeClass("fa-play");
+        }, 500);
+        $(".preload").fadeToggle();
+        // $(".preload").addClass("ok");
     });
     
 }

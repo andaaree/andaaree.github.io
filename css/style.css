@@ -97,13 +97,19 @@ body::-webkit-scrollbar-thumb {
 .btn-preload{
   margin-bottom: 100px;
 }
-.ok{
-  animation-name: slideUp;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
+.btn-preload:active{
+  -moz-transition: height .2s linear;
+  -webkit-transition: height .2s linear;
+  transition: height .2s linear;
+  transition-delay: 0.2s;
   transition-duration: 0.5s;
 }
-
+/**
+**
+** Bootstrap Modifier
+**
+**/
+.sticky-top { top: 0.5em; }
 /** Parralax
 */
 .prx {
@@ -150,6 +156,7 @@ body::-webkit-scrollbar-thumb {
 
 .btgr{
   border-radius: 25px 25px 0 0;
+  margin-left: -20px;
 }
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */

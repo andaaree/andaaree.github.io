@@ -36,18 +36,20 @@
     </button>
   </div>
   <main class="flex-shrink-0">
-    <div class="top sticky-top row mt-2">
+    <div class="main-header sticky-top row mt-2 justify-content-center">
       <div class="col-6 text-center">
-        <audio id="player" autoplay allow="autoplay">
+        <audio id="player" autoplay loop allow="autoplay">
           <source src="audio/song.mp3" type="audio/mpeg">
         </audio>
-        <button class="btn btn-dark btn-outline-info btn-player"><i class="fa fa-play"></i></button>
+        <button class="btn btn-dark btn-sm btn-outline-info btn-player"><i class="fa fa-play"></i></button>
       </div>
-      <div class="col-6">
-        <div class="sw mx-3 form-check form-switch">
-          <label class="form-label form-check-label mx-3" for="lightSwitch" id="lightSwitchLabel">
-            <i class="fa"></i></label>
-          <input class="form-control form-check-input" role="switch" type="checkbox" id="lightSwitch" />
+      <div class="col-6 text-center">
+        <div class="input-group">
+          <div class="sw form-check form-switch">
+            <label class="form-label form-check-label mx-2" for="lightSwitch" id="lightSwitchLabel">
+              <i class="fa"></i></label>
+            <input class="form-control form-check-input" role="switch" type="checkbox" id="lightSwitch" />
+          </div>
         </div>
       </div>
     </div>
@@ -266,7 +268,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer btgr pt-3 mt-2 bg-dark fixed-bottom">
+  <footer class="footer btgr pt-1 mt-2 bg-dark fixed-bottom">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-2 text-center">
