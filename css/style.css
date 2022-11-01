@@ -101,19 +101,9 @@ body::-webkit-scrollbar-thumb {
 /**
   ** Transition
   **/
-.ok{
-  height: 0%;
-  opacity: 0;
-}
 .btn-preload {
   margin-bottom: 100px;
   margin: 100px auto;
-  position: inherit;
-  overflow: hidden;
-  -webkit-transition: opacity .7s linear;
-  -moz-transition: opacity .7s linear;
-  -o-transition: opacity .7s linear;
-  transition: opacity .7s linear;
 }
 
 /**

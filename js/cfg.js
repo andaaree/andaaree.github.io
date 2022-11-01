@@ -113,6 +113,8 @@ $(document).ready(function () {
 });
 window.onload = function() {
     //Audio Config
+    var settingAutoplay = 'yes';
+    window.settingAutoplay = settingAutoplay === 'disable' ? false : true;
     var vid = document.getElementById("player");
     vid.volume = 0.5;
     $(".btn-player").click(function (e) { 
@@ -129,10 +131,11 @@ window.onload = function() {
             // alert('music playing');
         }
     });
-    $(".btn-preload").click(function (e) { 
+    $(".btn-preload").click(function (e) {
         e.preventDefault();
         // $(".preload").toggleClass("ok");
-        $(".preload").toggle(500,() => {
+        $(this).slideUp();
+        $(".preload").slideUp(500,() => {
             // $(".preload").remove();
             vid.play();
             $(".btn-player i").addClass("fa-pause");
