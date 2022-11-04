@@ -134,13 +134,13 @@ window.onload = function() {
     $(".btn-preload").click(function (e) {
         e.preventDefault();
         // $(".preload").toggleClass("ok");
-        $(this).slideUp();
-        $(".preload").slideUp(500,() => {
-            // $(".preload").remove();
+        $(".preload").addClass("anim");
+        setTimeout(() => {
             vid.play();
+            $(".preload").remove();
             $(".btn-player i").addClass("fa-pause");
             $(".btn-player i").removeClass("fa-play");
-        });
+        }, 2000);
         // $(this).toggleClass("ok");
         // $(".preload").fadeToggle();
     });
