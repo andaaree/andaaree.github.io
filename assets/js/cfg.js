@@ -144,5 +144,4 @@ window.onload = function() {
         // $(this).toggleClass("ok");
         // $(".preload").fadeToggle();
     });
-    
 }

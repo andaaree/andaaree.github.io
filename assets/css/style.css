@@ -82,7 +82,6 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   width: 100%;
   height: 100%;
-  background: salmon;
   overflow: hidden;
   text-align: center;
   background-attachment: fixed;
@@ -114,10 +113,9 @@ body::-webkit-scrollbar-thumb {
   ** Transition
   **/
 .btn-preload {
-  margin: 150px auto ;
+  margin: 25% auto;
   padding: 10px;
   position: inherit;
-  bottom: 0;
   border-radius: 10px;
 }
 
